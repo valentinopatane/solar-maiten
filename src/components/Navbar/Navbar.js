@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../imgs/maitenlogo.png";
 import menuBurger from "../../imgs/icons/menu-svgrepo-com.svg";
+import NavListItem from "./NavListItem";
 const Navbar = () => {
-    const activeStyle = { borderBottom: "3px solid #f05742" };
     const [navBar, setNavbar] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
     const changeBackground = () => {
@@ -18,59 +18,31 @@ const Navbar = () => {
         <nav className={navBar || showMenu ? "navBar active" : "navBar"}>
             <div className="navContainer">
                 <div className="navLogoContainer">
-                    <NavLink to="/">
+                    <NavLink to="/" onClick={() => setShowMenu(false)}>
                         <img src={logo} alt="maiten-logo" loading="lazy"></img>
                     </NavLink>
                 </div>
                 <ul className={showMenu ? "navActive" : null}>
-                    <li>
-                        <NavLink
-                            style={({ isActive }) =>
-                                isActive ? activeStyle : undefined
-                            }
-                            exact="true"
-                            to="/"
-                            onClick={() => setShowMenu(false)}
-                        >
-                            Inicio
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            style={({ isActive }) =>
-                                isActive ? activeStyle : undefined
-                            }
-                            exact="true"
-                            to="/servicios"
-                            onClick={() => setShowMenu(false)}
-                        >
-                            Servicios
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            style={({ isActive }) =>
-                                isActive ? activeStyle : undefined
-                            }
-                            exact="true"
-                            to="/habitaciones"
-                            onClick={() => setShowMenu(false)}
-                        >
-                            Habitaciones
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            style={({ isActive }) =>
-                                isActive ? activeStyle : undefined
-                            }
-                            exact="true"
-                            to="/contacto"
-                            onClick={() => setShowMenu(false)}
-                        >
-                            Contacto
-                        </NavLink>
-                    </li>
+                    <NavListItem
+                        name="Inicio"
+                        to="/"
+                        setShowMenu={setShowMenu}
+                    />
+                    <NavListItem
+                        name="Servicios"
+                        to="/servicios"
+                        setShowMenu={setShowMenu}
+                    />
+                    <NavListItem
+                        name="Habitaciones"
+                        to="/habitaciones"
+                        setShowMenu={setShowMenu}
+                    />
+                    <NavListItem
+                        name="Contacto"
+                        to="/contacto"
+                        setShowMenu={setShowMenu}
+                    />
                 </ul>
                 <button
                     className="burgerButton"
