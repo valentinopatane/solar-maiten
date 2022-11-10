@@ -1,0 +1,7 @@
+@use "../abstract/variables" as *;
+
+html,
+body {
+    font-family: $main-font;
+    background-color: $back-color;
+}

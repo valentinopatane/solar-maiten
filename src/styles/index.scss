@@ -1,0 +1,20 @@
+/*abstracts*/
+@use "scss/abstract/variables" as *;
+@use "scss/abstract/mixins" as *;
+
+/*base*/
+@import "scss/base/_resets.scss";
+@import "scss/base/_base.scss";
+
+/*----------Components-----------*/
+@import "../components/Navbar/_navbar.scss";
+@import "../components/Footer/footer";
+
+@import "../components/Carousel/carousel";
+@import "../components/HomeInfo/homeInfo";
+@import "../components/Banner/banner";
+@import "../components/Spa/spa";
+@import "../components/CardSlider/cardSlider";
+@import "../components/ServicesInfo/servicesInfo";
+@import "../components/ContactInfo/contactInfo";
+@import "../components/RoomsInfo/roomsInfo";

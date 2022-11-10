@@ -1,0 +1,80 @@
+.cardsContainer {
+    width: 80%;
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    color: #000;
+    padding: 20px 10px;
+    cursor: grab;
+    @include media-down(lg) {
+        grid-auto-columns: 60%;
+    }
+    @include media-down(md) {
+        grid-auto-columns: 50%;
+    }
+    @include media-down(sm) {
+        grid-auto-columns: 100%;
+    }
+
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #80808059;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $main-color;
+    }
+}
+.activeCards {
+    cursor: grabbing;
+}
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.205);
+    padding: 20px 30px 0;
+    user-select: none;
+    border-radius: 15px;
+    @include media-down(sm) {
+        height: 400px;
+    }
+    @include media-down(xs) {
+        height: 350px;
+    }
+    & div {
+        width: 100%;
+        height: 80%;
+        @include media-down(sm) {
+            height: 70%;
+        }
+        @include media-down(xs) {
+            height: 40%;
+        }
+        & img {
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & h6 {
+        margin-top: 10px;
+        color: $main-color;
+        font-size: 16px;
+    }
+    & p {
+        color: #707070;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 10px;
+    }
+}
