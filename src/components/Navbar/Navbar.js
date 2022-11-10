@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="navContainer">
                 <div className="navLogoContainer">
                     <NavLink to="/">
-                        <img src={logo} alt="logo"></img>
+                        <img src={logo} alt="maiten-logo" loading="lazy"></img>
                     </NavLink>
                 </div>
                 <ul className={showMenu ? "navActive" : null}>

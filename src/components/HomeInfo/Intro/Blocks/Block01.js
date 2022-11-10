@@ -22,7 +22,7 @@ const BlockData = () => {
                 </div>
             </div>
             <div className="homeInfoDataImg">
-                <img src={photo1}></img>
+                <img src={photo1} loading="lazy" alt="image"></img>
             </div>
         </div>
     );

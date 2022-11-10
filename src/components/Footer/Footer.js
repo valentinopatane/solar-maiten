@@ -11,17 +11,17 @@ const Footer = () => {
                 <p>Solar Maiten 2022. Todos los derechos reservados.</p>
             </div>
             <div className="logo">
-                <img src={logo}></img>
+                <img src={logo} alt="maiten-logo" loading="lazy"></img>
             </div>
             <div className="footerSocials">
                 <Link>
-                    <img src={phone}></img>
+                    <img src={phone} alt="contact-icon" loading="lazy"></img>
                 </Link>
                 <Link>
-                    <img src={ig}></img>
+                    <img src={ig} alt="contact-icon" loading="lazy"></img>
                 </Link>
                 <Link>
-                    <img src={mail}></img>
+                    <img src={mail} alt="contact-icon" loading="lazy"></img>
                 </Link>
             </div>
         </footer>

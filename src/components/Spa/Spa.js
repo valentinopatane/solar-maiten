@@ -46,7 +46,7 @@ const Spa = () => {
                 <div className="spaInfoContainer">
                     <h3>El mejor servicio de SPA.</h3>
                     <div className="infoChild">
-                        <img src={pool}></img>
+                        <img src={pool} alt="icon" loading="lazy"></img>
                         <h5>Piscina climatizada con hidromasajes</h5>
                         <p>
                             El complejo cubierto, cuenta con una piscina
@@ -56,7 +56,7 @@ const Spa = () => {
                         </p>
                     </div>
                     <div className="infoChild">
-                        <img src={massage}></img>
+                        <img src={massage} alt="icon" loading="lazy"></img>
                         <h5>
                             Camillas de masajes con piedras calientes de Jade
                         </h5>

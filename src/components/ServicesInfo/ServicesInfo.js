@@ -19,7 +19,11 @@ const ServicesInfo = () => {
                 <ul>
                     {commS.map((s) => (
                         <li>
-                            <img src={check}></img>
+                            <img
+                                src={check}
+                                alt="check-logo"
+                                loading="lazy"
+                            ></img>
                             <span>{s}</span>
                         </li>
                     ))}

@@ -40,7 +40,7 @@ const CardSlider = ({ cards }) => {
             {cards.map((card) => (
                 <div className="cardContainer" key={card.title}>
                     <div>
-                        <img src={card.img}></img>
+                        <img src={card.img} alt="slide" loading="lazy"></img>
                     </div>
                     <h6>{card.title}</h6>
                     <p>{card.description}</p>

@@ -28,12 +28,12 @@ const EndHome = () => {
                     </div>
                 </div>
                 <div className="homeInfoDataImg">
-                    <img src={photo3}></img>
+                    <img src={photo3} alt="image" loading="lazy"></img>
                 </div>
             </div>
             <div className="homeInfoDataContainer">
                 <div className="homeInfoDataImg">
-                    <img src={photo4}></img>
+                    <img src={photo4} alt="image" loading="lazy"></img>
                 </div>
                 <div className="homeInfoData">
                     <div>

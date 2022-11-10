@@ -10,15 +10,19 @@ const ContactInfo = () => {
                 <h3>TU CONSULTA NO MOLESTA!</h3>
                 <div className="contactSocials">
                     <Link>
-                        <img src={phone}></img>
+                        <img
+                            src={phone}
+                            alt="contact-icon"
+                            loading="lazy"
+                        ></img>
                         <p>Tel:43829098</p>
                     </Link>
                     <Link>
-                        <img src={ig}></img>
+                        <img src={ig} alt="contact-icon" loading="lazy"></img>
                         <p>@solarmaiten</p>
                     </Link>
                     <Link>
-                        <img src={mail}></img>
+                        <img src={mail} alt="contact-icon" loading="lazy"></img>
                         <p>solarmaiten@gmail.com</p>
                     </Link>
                 </div>

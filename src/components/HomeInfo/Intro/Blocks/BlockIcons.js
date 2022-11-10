@@ -8,32 +8,32 @@ const BlockIcons = () => {
     return (
         <div className="homeInfoIconsContainer">
             <div className="homeInfoIconsImg">
-                <img src={photo2}></img>
+                <img src={photo2} alt="image" loading="lazy"></img>
             </div>
             <div className="homeInfoIcons">
                 <div>
-                    <img src={spa}></img>
+                    <img src={spa} alt="icon" loading="lazy"></img>
                     <p>
                         Servicio de masajes, piscina climatizada e hidromasajes
                         para su descanso.
                     </p>
                 </div>
                 <div>
-                    <img src={plus18}></img>
+                    <img src={plus18} alt="icon" loading="lazy"></img>
                     <p>
                         Nuestras instalaciones son exclusivas para parejas y
                         mayores de 18 años.
                     </p>
                 </div>
                 <div>
-                    <img src={comfortable}></img>
+                    <img src={comfortable} alt="icon" loading="lazy"></img>
                     <p>
                         Un espacio para encontrar el bienestar y comodidad que
                         toda persona necesita.
                     </p>
                 </div>
                 <div>
-                    <img src={relax}></img>
+                    <img src={relax} alt="icon" loading="lazy"></img>
                     <p>
                         La tranquilidad y seguridad de saber que nadie te
                         molesta.

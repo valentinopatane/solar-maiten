@@ -24,7 +24,7 @@ const RoomsInfo = () => {
             <ul>
                 {roomS.map((s) => (
                     <li>
-                        <img src={check}></img>
+                        <img src={check} alt="check-icon" loading="lazy"></img>
                         <span>{s}</span>
                     </li>
                 ))}

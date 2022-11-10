@@ -20,7 +20,11 @@ const Carousel = ({ slides }) => {
                 return index === currentIndex ? (
                     <div className="slide activeSlide" key={currentIndex}>
                         <div className="slideImgContainer">
-                            <img src={slide.img}></img>
+                            <img
+                                src={slide.img}
+                                alt="image"
+                                loading="lazy"
+                            ></img>
                         </div>
                         <div className="slideInfoContainer">
                             <h1>{slide.title}</h1>

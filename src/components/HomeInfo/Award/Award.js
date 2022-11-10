@@ -5,7 +5,7 @@ const Award = () => {
     return (
         <div className="homeAward">
             <div className="opacityDiv"></div>
-            <img src={trophie}></img>
+            <img src={trophie} alt="icon" loading="lazy"></img>
             <p>
                 Distinguido con el galardón de{" "}
                 <span>"Compromiso de Calidad Turística"</span>, otorgado por la
