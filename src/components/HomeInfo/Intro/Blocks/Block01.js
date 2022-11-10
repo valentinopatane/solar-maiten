@@ -13,11 +13,7 @@ const BlockData = () => {
                         Solar Maiten tiene un conjunto de servicios que tienen
                         por finalidad ofrecer a los huéspedes una atención
                         integral pensada para su descanso, la salud y la calidad
-                        de vida. Luego del servicio de masajes
-                        descontracturantes y relajantes, sentirás en Armonia el
-                        Cuepo y el Alma, logrando relajar la mente y quitar el
-                        estrés para sumergirnos en una maravillosa sensación de
-                        bienestar.
+                        de vida.
                     </p>
                 </div>
             </div>

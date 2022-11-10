@@ -17,8 +17,15 @@ const Carousel = ({ slides }) => {
             {slides.map((slide) => {
                 const index = slides.indexOf(slide);
 
-                return index === currentIndex ? (
-                    <div className="slide activeSlide" key={currentIndex}>
+                return (
+                    <div
+                        className={
+                            index === currentIndex
+                                ? "activeSlide slide "
+                                : "slide"
+                        }
+                        key={currentIndex}
+                    >
                         <div className="slideImgContainer">
                             <img
                                 src={slide.img}
@@ -31,7 +38,7 @@ const Carousel = ({ slides }) => {
                             <p>{slide.description}</p>
                         </div>
                     </div>
-                ) : null;
+                );
             })}
         </div>
     );

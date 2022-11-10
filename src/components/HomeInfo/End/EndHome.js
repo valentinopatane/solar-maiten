@@ -8,22 +8,18 @@ const EndHome = () => {
                 <div className="homeInfoData">
                     <div>
                         <h4>
-                            <span>Solar Maiten</span> "Naturaleza y
-                            Hospitalidad"
+                            <b>Solar Maiten</b> "Naturaleza y Hospitalidad"
                         </h4>
                         <p>
                             Pensando en alcanzar la mayor satisfacción al
-                            turista, nació SOLAR MAITEN. Ubicado en una zona
-                            estratégica, en un barrio residencial a pocas
-                            cuadras del camino del vino y el polo gastronómico
-                            de la ciudad y a sólo minutos de paisajes, montañas,
-                            rios y aventuras. Es un apart hotel cuidadosamente
-                            decorado y equipado. Solar Maiten es recomendado
-                            para parejas, por su privacidad, tranquilidad y buen
-                            gusto. Desde el complejo, los pasajeros podran
-                            contratar todo tipo de excursiones, desde trekking,
-                            paseos en catamarán, turismo rural, rafting, visitas
-                            a bodegas, deportes náuticos, salidas en 4x4, etc.
+                            turista, nació SOLAR MAITEN. Es un apart hotel
+                            cuidadosamente decorado y equipado. Solar Maiten es
+                            recomendado para parejas, por su privacidad,
+                            tranquilidad y buen gusto. Desde el complejo, los
+                            pasajeros podran contratar todo tipo de excursiones,
+                            desde trekking, paseos en catamarán, turismo rural,
+                            rafting, visitas a bodegas, deportes náuticos,
+                            salidas en 4x4, etc.
                         </p>
                     </div>
                 </div>
@@ -37,7 +33,9 @@ const EndHome = () => {
                 </div>
                 <div className="homeInfoData">
                     <div>
-                        <h4>San Rafael, el corazón de Mendoza.</h4>
+                        <h4>
+                            <b>San Rafael</b>, el corazón de Mendoza.
+                        </h4>
                         <p>
                             El departamento de San Rafael está ubicado en el
                             centro de la provincia de Mendoza, Argentina. Dos
